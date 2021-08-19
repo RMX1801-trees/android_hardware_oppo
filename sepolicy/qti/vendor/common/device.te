@@ -1,2 +1,5 @@
 # Mdm
 type mdmreason_device, dev_type;
+
+# Persist
+type vendor_persist_block_device, dev_type;
