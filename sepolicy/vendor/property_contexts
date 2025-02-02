@@ -1,0 +1,23 @@
+# Fingerprint
+oppo.fpc.sw.version            u:object_r:vendor_fingerprint_prop:s0
+persist.sys.fp.vendor          u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.fingerprint.    u:object_r:vendor_fingerprint_prop:s0
+
+# Radio
+oppo.device.imeicache                 u:object_r:vendor_radio_prop:s0
+persist.oppo.network.operator         u:object_r:vendor_radio_prop:s0
+persist.oppo.network.vn.regionmark    u:object_r:vendor_radio_prop:s0
+persist.oppo.nw.region.lock           u:object_r:vendor_radio_prop:s0
+persist.sys.oppo.simlockoperator      u:object_r:vendor_radio_prop:s0
+persist.sys.oppo.vn.regionmark        u:object_r:vendor_radio_prop:s0
+ro.oppo.build.exp                     u:object_r:vendor_radio_prop:s0
+ro.oppo.nw.singlecard                 u:object_r:vendor_radio_prop:s0
+ro.oppo.operator                      u:object_r:vendor_radio_prop:s0
+ro.oppo.regionmark                    u:object_r:vendor_radio_prop:s0
+ro.oppo.version                       u:object_r:vendor_radio_prop:s0
+ro.sys.reserve.integrate              u:object_r:vendor_radio_prop:s0
+ro.rf_version                         u:object_r:vendor_radio_prop:s0
+sys.oppo.network.rffeature            u:object_r:vendor_radio_prop:s0
+
+# Sensors
+ro.build.flavor    u:object_r:exported_system_prop:s0

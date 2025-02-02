@@ -1,0 +1,5 @@
+# Camera
+type oppoalgo_daemon_hwservice, hwservice_manager_type;
+
+# Hypnus
+type hal_hypnus_hwservice, hwservice_manager_type;

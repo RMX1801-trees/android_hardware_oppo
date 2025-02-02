@@ -1,0 +1,25 @@
+# Camera
+/(vendor|system/vendor)/bin/oppoalgo_daemon		                                                      u:object_r:oppoalgo_daemon_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.camera\.oppoAlgoProcessService@1\.0-service    u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.ktv@1\.0-service                               u:object_r:hal_camera_default_exec:s0
+
+# Camera data
+/data/media                                   u:object_r:media_rw_data_file:s0
+/mnt/vendor/persist/camera(/.*)?              u:object_r:persist_camera_file:s0
+/mnt/vendor/opporeserve/media(/.*)?           u:object_r:oppo_reserve_media_file:s0
+/mnt/vendor/opporeserve/media/Camera(/.*)?    u:object_r:oppo_reserve_media_camera:s0
+
+# Fingerprint
+/dev/esfp0                                                                                      u:object_r:egis_finger_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.oppo    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.biometrics\.fingerprint@2\.1-service     u:object_r:hal_fingerprint_default_exec:s0
+
+# Health
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.0-service\.oppo    u:object_r:hal_health_default_exec:s0
+
+# Hypnus
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.hypnus@1\.0-service    u:object_r:hal_hypnus_default_exec:s0
+
+# NV
+/cache/opponvitems(/.*)?    u:object_r:nv_data_file:s0
+/data/opponvitems(/.*)?     u:object_r:nv_data_file:s0

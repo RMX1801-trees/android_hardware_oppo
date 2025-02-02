@@ -1,0 +1,5 @@
+typeattribute rild data_between_core_and_vendor_violators;
+
+allow rild nv_data_file:dir { getattr search write create add_name };
+allow rild nv_data_file:file { read write create open };
+allow rild system_data_file:dir getattr;

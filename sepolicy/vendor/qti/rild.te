@@ -1,0 +1,1 @@
+allow rild cam_proc:file { read open };

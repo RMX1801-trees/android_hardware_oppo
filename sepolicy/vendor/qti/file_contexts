@@ -1,0 +1,18 @@
+# Firmware
+/firmware(/.*)?       u:object_r:firmware_file:s0
+/bt_firmware(/.*)?    u:object_r:bt_firmware_file:s0
+
+# MMC
+/sys/devices(/platform)?/soc/[a-z0-9]+.sdhci/mmc_host/mmc[0-2]/mmc[0-2]:[0-9]+(/.*)?    u:object_r:sysfs_mmc:s0
+
+# NV
+/dev/block/platform/soc/[a-z0-9]+.sdhci/by-name/oppodycnvbk    u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc/[a-z0-9]+.ufshc/by-name/oppodycnvbk    u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc/[a-z0-9]+.sdhci/by-name/oppostanvbk    u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc/[a-z0-9]+.ufshc/by-name/oppostanvbk    u:object_r:modem_efs_partition_device:s0
+
+# Power supply
+/sys/devices(/platform)?/soc/[a-z0-9]+.qcom,spmi/spmi-[0-9]/spmi[0-9]-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,qpnp-smb[2-5]/power_supply/ac(/.*)?    u:object_r:sysfs_battery_supply:s0
+
+# Sharedmem
+/sys/devices(/platform)?/soc/[0-9]+.qcom,oembackup_sharedmem/uio/uio[0-1](/.*)?    u:object_r:sysfs_oembackup:s0
