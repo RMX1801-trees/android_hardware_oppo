@@ -1,0 +1,14 @@
+# Devinfo
+genfscon proc /devinfo    u:object_r:proc_devinfo_file:s0
+
+# Fingerprint
+genfscon proc /fp_id    u:object_r:oppo_fingerprint_proc:s0
+
+# Hypnus
+genfscon sysfs /kernel/hypnus    u:object_r:sysfs_hypnus:s0
+
+# Touchpanel
+genfscon proc /touchpanel    u:object_r:proc_touchpanel_file:s0
+
+# Versioning
+genfscon proc /oppoVersion    u:object_r:oppo_version_proc:s0

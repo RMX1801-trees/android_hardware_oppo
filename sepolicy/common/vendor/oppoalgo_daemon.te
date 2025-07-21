@@ -1,0 +1,13 @@
+type hal_algodaemon_oppo, domain, mlstrustedsubject;
+hal_server_domain(hal_algodaemon_oppo, hal_algodaemon)
+
+type hal_algodaemon_oppo_exec, exec_type, file_type, vendor_file_type;
+init_daemon_domain(hal_algodaemon_oppo)
+
+binder_call(hal_algodaemon_client, hal_algodaemon_server)
+binder_call(hal_algodaemon_server, hal_algodaemon_client)
+
+hal_attribute_hwservice(hal_algodaemon, hal_algodaemon_oppo_hwservice)
+
+add_service(hal_algodaemon_oppo, oppoalgo_service)
+vndbinder_use(hal_algodaemon_oppo)

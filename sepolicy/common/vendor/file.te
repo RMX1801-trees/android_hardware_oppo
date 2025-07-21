@@ -1,0 +1,24 @@
+# Camera
+type persist_camera_file, file_type;
+
+# Devinfo
+type proc_devinfo_file, fs_type, proc_type;
+
+# Fingerprint
+type oppo_fingerprint_file, data_file_type, file_type;
+type oppo_fingerprint_proc, fs_type, proc_type, mlstrustedobject;
+
+# Hypnus
+type sysfs_hypnus, fs_type, sysfs_type;
+
+# NV
+type nv_data_file, file_type, data_file_type, core_data_file_type;
+
+# Radio
+type oppo_reserve_file, file_type;
+
+# Touchpanel
+type proc_touchpanel_file, fs_type, proc_type;
+
+# Versioning
+type oppo_version_proc, fs_type, proc_type, mlstrustedobject;

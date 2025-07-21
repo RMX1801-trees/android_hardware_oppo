@@ -1,0 +1,22 @@
+# Algo daemon
+android.OPPO.IOppoAlgoDaemon    u:object_r:hal_algodaemon_oppo_hwservice:s0
+
+# Camera
+vendor.oppo.hardware.camera.oppoAlgoProcessService::IOppoAlgoProcessService    u:object_r:hal_algoprocessservice_oppo_hwservice:s0
+vendor.oppo.hardware.camera.oppopostproc::ICameraPostProc                      u:object_r:hal_camera_hwservice:s0
+vendor.oppo.hardware.camera.oppoHalAssist::IOppoHalAssist                      u:object_r:hal_camera_hwservice:s0
+
+# Fingerprint
+android.frameworks.fingerprintservice::IFingerprintHalService                  u:object_r:hal_fingerprint_hwservice:s0
+vendor.egistec.hardware.fingerprint::IBiometricsFingerprintRbs                 u:object_r:hal_fingerprint_hwservice:s0
+vendor.oppo.hardware.biometrics.fingerprint::IBiometricsFingerprint            u:object_r:hal_fingerprint_hwservice:s0
+
+# Hypnus
+vendor.oppo.hardware.hypnus::IHypnusUtil    u:object_r:hal_hypnus_hwservice:s0
+
+# Ktv
+vendor.oppo.hardware.ktv::IKtv    u:object_r:hal_ktv_hwservice:s0
+
+# Telephony
+vendor.oppo.hardware.radio.opporadio::IOppoRadio          u:object_r:hal_telephony_hwservice:s0
+vendor.oppo.hardware.radio.oppoappradio::IOppoAppRadio    u:object_r:hal_telephony_hwservice:s0

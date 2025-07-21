@@ -1,2 +1,14 @@
 # Health
 /vendor/bin/hw/android\.hardware\.health@2\.0-service\.oppo    u:object_r:hal_health_default_exec:s0
+
+# Mdm
+/dev/mdmreason    u:object_r:mdmreason_device:s0
+
+# MMC
+/sys/devices(/platform)?/soc/[a-z0-9]+.sdhci/mmc_host/mmc[0-2]/mmc[0-2]:[0-9]+/serial    u:object_r:sysfs_mmc:s0
+
+# Persist
+/persist/bms(/.*)?    u:object_r:persist_bms_file:s0
+
+# Sharedmem
+/sys/devices(/platform)?/soc/[0-9]+.qcom,oembackup_sharedmem/uio/uio[0-1](/.*)?    u:object_r:sysfs_oembackup:s0

@@ -1,0 +1,2 @@
+# Wifi
+vendor.oppo.wifi.check.persist    u:object_r:oppo_wifi_prop:s0

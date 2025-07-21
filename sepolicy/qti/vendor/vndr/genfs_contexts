@@ -1,0 +1,2 @@
+# Power supply
+genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pmi632@2:qcom,qpnp-smb5/power_supply/ac         u:object_r:vendor_sysfs_battery_supply:s0

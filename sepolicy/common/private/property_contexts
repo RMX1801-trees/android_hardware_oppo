@@ -1,0 +1,38 @@
+# Audio
+persist.oppo.mm.    u:object_r:exported_system_prop:s0
+sys.oppo.mm.        u:object_r:exported_system_prop:s0
+
+# Camera
+oppo.camera.                u:object_r:oppo_camera_prop:s0
+sys.oppo.camera.            u:object_r:oppo_camera_prop:s0
+persist.camera.             u:object_r:oppo_camera_prop:s0
+persist.oppo.camera.        u:object_r:oppo_camera_prop:s0
+persist.sys.assert.panic    u:object_r:exported_system_prop:s0
+
+# Fingerprint
+gf.debug.                u:object_r:oppo_fingerprint_prop:s0
+oppo.fingerprint.        u:object_r:oppo_fingerprint_prop:s0
+oppo.fpc.                u:object_r:oppo_fingerprint_prop:s0
+persist.sys.fp.vendor    u:object_r:oppo_fingerprint_prop:s0
+
+# Network
+oppo.device.imeicache               u:object_r:oppo_network_prop:s0
+oppo.eng.factory.no                 u:object_r:oppo_network_prop:s0
+persist.oppo.network.               u:object_r:oppo_network_prop:s0
+persist.oppo.nw.                    u:object_r:oppo_network_prop:s0
+persist.sys.oppo.simlockoperator    u:object_r:oppo_network_prop:s0
+persist.sys.oppo.vn.regionmark      u:object_r:oppo_network_prop:s0
+ro.oppo.network.                    u:object_r:oppo_network_prop:s0
+ro.oppo.nw.                         u:object_r:oppo_network_prop:s0
+ro.oppo.operator                    u:object_r:oppo_network_prop:s0
+ro.oppo.regionmark                  u:object_r:oppo_network_prop:s0
+ro.rf_version                       u:object_r:oppo_network_prop:s0
+ro.sys.reserve.integrate            u:object_r:exported_system_prop:s0
+sys.build.display.full_id           u:object_r:exported_system_prop:s0
+sys.oppo.network.                   u:object_r:oppo_network_prop:s0
+
+# Version
+ro.build.flavor         u:object_r:exported_system_prop:s0
+ro.build.version.ota    u:object_r:exported_system_prop:s0
+ro.oppo.build.exp       u:object_r:oppo_version_prop:s0
+ro.oppo.version         u:object_r:oppo_version_prop:s0

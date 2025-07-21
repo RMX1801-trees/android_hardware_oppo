@@ -1,0 +1,11 @@
+# Camera
+vendor_internal_prop(oppo_camera_prop)
+
+# Fingerprint
+vendor_internal_prop(oppo_fingerprint_prop)
+
+# Network
+vendor_internal_prop(oppo_network_prop)
+
+# Version
+vendor_internal_prop(oppo_version_prop)

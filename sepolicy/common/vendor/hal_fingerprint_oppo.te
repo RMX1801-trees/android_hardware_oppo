@@ -1,0 +1,24 @@
+type hal_fingerprint_oppo, domain;
+hal_server_domain(hal_fingerprint_oppo, hal_fingerprint)
+
+type hal_fingerprint_oppo_exec, exec_type, file_type, vendor_file_type;
+init_daemon_domain(hal_fingerprint_oppo)
+
+typeattribute hal_fingerprint_oppo data_between_core_and_vendor_violators;
+
+vndbinder_use(hal_fingerprint_oppo)
+binder_call(hal_fingerprint_oppo, hal_fingerprint_default)
+
+allow hal_fingerprint_oppo egis_finger_device:chr_file rw_file_perms;
+allow hal_fingerprint_oppo fingerprintd_data_file:dir w_dir_perms;
+allow hal_fingerprint_oppo fingerprintd_data_file:file create_file_perms;
+allow hal_fingerprint_oppo oppo_fingerprint_file:dir rw_dir_perms;
+allow hal_fingerprint_oppo oppo_fingerprint_file:file rw_file_perms;
+allow hal_fingerprint_oppo oppo_fingerprint_proc:file r_file_perms;
+allow hal_fingerprint_oppo sysfs:file rw_file_perms;
+allow hal_fingerprint_oppo sysfs_hypnus:dir { open read search };
+allow hal_fingerprint_oppo sysfs_hypnus:file { append getattr ioctl lock map open read write };
+allow hal_fingerprint_oppo tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_oppo uhid_device:chr_file rw_file_perms;
+
+set_prop(hal_fingerprint_oppo, oppo_fingerprint_prop)

@@ -1,0 +1,7 @@
+# Camera
+vendor.oppo.camera.             u:object_r:oppo_camera_prop:s0
+vendor.oppo.open.camera.name    u:object_r:oppo_camera_prop:s0
+
+# Fingerprint
+persist.vendor.fingerprint.    u:object_r:oppo_fingerprint_prop:s0
+vendor.fingerprint.cali        u:object_r:oppo_fingerprint_prop:s0

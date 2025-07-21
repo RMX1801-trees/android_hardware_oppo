@@ -1,0 +1,37 @@
+# Algo daemon
+/(vendor|system/vendor)/bin/oppoalgo_daemon    u:object_r:hal_algodaemon_oppo_exec:s0
+
+# Camera
+/mnt/vendor/persist/camera(/.*)?                                                                      u:object_r:persist_camera_file:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.camera\.oppoAlgoProcessService@1\.0-service    u:object_r:hal_algoprocessservice_oppo_exec:s0
+
+# Fingerprint data
+/data/gf_data(/.*)?                             u:object_r:fingerprintd_data_file:s0
+/data/images(/.*)?                              u:object_r:fingerprintd_data_file:s0
+/data/system/gf_data(/.*)?                      u:object_r:fingerprintd_data_file:s0
+/data/vendor/fingerprint(/.*)?                  u:object_r:oppo_fingerprint_file:s0
+/data/vendor/optical_fingerprint(/.*)?          u:object_r:oppo_fingerprint_file:s0
+/data/vendor/silead(/.*)?                       u:object_r:oppo_fingerprint_file:s0
+/mnt/vendor/persist/fingerprint(/.*)?           u:object_r:oppo_fingerprint_file:s0
+/persist/silead(/.*)?                           u:object_r:fingerprintd_data_file:s0
+
+# Fingerprint device
+/dev/esfp0    u:object_r:egis_finger_device:s0
+
+# Fingerprint service
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.oppo    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.biometrics\.fingerprint@2\.1-service     u:object_r:hal_fingerprint_oppo_exec:s0
+
+# Hypnus
+/sys/kernel/hypnus(/.*)?                                                      u:object_r:sysfs_hypnus:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.hypnus@1\.0-service    u:object_r:hal_hypnus_oppo_exec:s0
+
+# Ktv
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.ktv@1\.0-service    u:object_r:hal_ktv_oppo_exec:s0
+
+# NV
+/cache/opponvitems(/.*)?    u:object_r:nv_data_file:s0
+/data/opponvitems(/.*)?     u:object_r:nv_data_file:s0
+
+# Reserve
+/mnt/vendor/opporeserve(/.*)?                                 u:object_r:oppo_reserve_file:s0

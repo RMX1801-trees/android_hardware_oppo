@@ -1,0 +1,5 @@
+# Fingerprint
+type egis_finger_device, dev_type;
+
+# Reserve
+type oppo_block_device, dev_type, mlstrustedobject;

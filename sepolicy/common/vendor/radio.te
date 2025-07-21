@@ -1,0 +1,2 @@
+allow radio oppo_reserve_file:dir rw_dir_perms;
+allow radio oppo_reserve_file:file rw_file_perms;

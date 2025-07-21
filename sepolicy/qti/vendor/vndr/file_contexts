@@ -1,0 +1,16 @@
+# ADSP
+/dsp(/.*)?    u:object_r:adsprpcd_file:s0
+
+# Metadata
+/dev/block/platform/soc/4744000.sdhci/by-name/metadata    u:object_r:metadata_block_device:s0
+
+# NV
+/dev/block/platform/soc/4744000.sdhci/by-name/oppodycnvbk    u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/4744000.sdhci/by-name/oppostanvbk    u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/4744000.sdhci/by-name/oppo_sec       u:object_r:vendor_modem_efs_partition_device:s0
+
+# Persist
+/mnt/vendor/persist/bms(/.*)?    u:object_r:persist_bms_file:s0
+
+# Reserve
+/dev/block/platform/soc/4744000.sdhci/by-name/opporeserve[0-3]    u:object_r:oppo_block_device:s0

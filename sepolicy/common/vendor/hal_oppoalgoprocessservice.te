@@ -1,0 +1,10 @@
+type hal_algoprocessservice_oppo, domain;
+hal_server_domain(hal_algoprocessservice_oppo, hal_algoprocessservice)
+
+type hal_algoprocessservice_oppo_exec, exec_type, file_type, vendor_file_type;
+init_daemon_domain(hal_algoprocessservice_oppo)
+
+binder_call(hal_algoprocessservice_client, hal_algoprocessservice_server)
+binder_call(hal_algoprocessservice_server, hal_algoprocessservice_client)
+
+hal_attribute_hwservice(hal_algoprocessservice, hal_algoprocessservice_oppo_hwservice)

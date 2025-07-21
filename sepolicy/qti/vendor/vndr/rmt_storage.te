@@ -1,0 +1,8 @@
+allow vendor_rmt_storage mdmreason_device:chr_file rw_file_perms;
+allow vendor_rmt_storage oppo_block_device:blk_file rw_file_perms;
+allow vendor_rmt_storage sysfs_oembackup:dir search;
+allow vendor_rmt_storage sysfs_oembackup:file r_file_perms;
+
+get_prop(vendor_rmt_storage, oppo_network_prop)
+r_dir_file(vendor_rmt_storage, oppo_version_proc)
+r_dir_file(vendor_rmt_storage, sysfs_mmc)

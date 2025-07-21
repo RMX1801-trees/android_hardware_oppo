@@ -1,0 +1,13 @@
+type hal_hypnus_oppo, domain;
+hal_server_domain(hal_hypnus_oppo, hal_hypnus)
+
+type hal_hypnus_oppo_exec, exec_type, file_type, vendor_file_type;
+init_daemon_domain(hal_hypnus_oppo)
+
+binder_call(hal_hypnus_client, hal_hypnus_server)
+binder_call(hal_hypnus_server, hal_hypnus_client)
+
+hal_attribute_hwservice(hal_hypnus, hal_hypnus_hwservice)
+
+allow hal_hypnus_oppo sysfs_hypnus:dir { open read search };
+allow hal_hypnus_oppo sysfs_hypnus:file { append getattr ioctl lock map open read write };

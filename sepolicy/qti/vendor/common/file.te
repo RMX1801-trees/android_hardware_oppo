@@ -1,0 +1,8 @@
+# Camera
+type proc_flash_light_file, fs_type, proc_type;
+
+# MMC
+type sysfs_mmc, sysfs_type, fs_type;
+
+# Sharedmem
+type sysfs_oembackup, sysfs_type, fs_type;
