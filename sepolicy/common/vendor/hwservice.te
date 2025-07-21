@@ -6,6 +6,3 @@ type hal_algoprocessservice_oppo_hwservice, hwservice_manager_type;
 
 # Hypnus
 type hal_hypnus_hwservice, hwservice_manager_type;
-
-# Ktv
-type hal_ktv_hwservice, hwservice_manager_type;

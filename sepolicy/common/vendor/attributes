@@ -1,4 +1,3 @@
 hal_attribute_lineage(algodaemon)
 hal_attribute_lineage(algoprocessservice)
 hal_attribute_lineage(hypnus)
-hal_attribute_lineage(ktv)
