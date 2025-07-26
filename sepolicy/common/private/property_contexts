@@ -31,6 +31,7 @@ oppo.device.imeicache               u:object_r:oppo_network_prop:s0
 oppo.eng.factory.no                 u:object_r:oppo_network_prop:s0
 persist.oppo.network.               u:object_r:oppo_network_prop:s0
 persist.oppo.nw.                    u:object_r:oppo_network_prop:s0
+persist.sys.oppo.region             u:object_r:exported_system_prop:s0
 persist.sys.oppo.simlockoperator    u:object_r:oppo_network_prop:s0
 persist.sys.oppo.vn.regionmark      u:object_r:oppo_network_prop:s0
 ro.oppo.network.                    u:object_r:oppo_network_prop:s0
