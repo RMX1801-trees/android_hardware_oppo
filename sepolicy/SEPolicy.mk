@@ -23,9 +23,9 @@ SEPOLICY_PLATFORM := $(subst device/qcom/,,$(SEPOLICY_PATH))
 ifeq ($(SEPOLICY_PLATFORM), sepolicy-legacy-um)
 BOARD_VENDOR_SEPOLICY_DIRS += \
 	$(OPPO_SEPOLICY_PATH)/qti/vendor/legacy-um
-else
+else ifeq ($(SEPOLICY_PLATFORM), sepolicy_vndr-legacy-um)
 BOARD_VENDOR_SEPOLICY_DIRS += \
-	$(OPPO_SEPOLICY_PATH)/qti/vendor/vndr
+	$(OPPO_SEPOLICY_PATH)/qti/vendor/vndr-legacy-um
 endif
 
 endif
