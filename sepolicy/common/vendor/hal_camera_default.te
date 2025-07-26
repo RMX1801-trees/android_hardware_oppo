@@ -10,7 +10,11 @@ allow hal_camera_default persist_camera_file:file create_file_perms;
 allow hal_camera_default proc:file rw_file_perms;
 allow hal_camera_default sysfs:file { open read };
 
+r_dir_file(hal_camera_default, oppo_reserve_file)
 r_dir_file(hal_camera_default, oppo_version_proc)
 r_dir_file(hal_camera_default, proc_devinfo_file)
+rw_dir_file(hal_camera_default, oppo_reserve_media_camera)
+rw_dir_file(hal_camera_default, oppo_reserve_media_file)
+get_prop(hal_camera_default, oppo_network_prop)
 get_prop(hal_camera_default, oppo_version_prop)
 set_prop(hal_camera_default, oppo_camera_prop)

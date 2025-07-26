@@ -3,11 +3,22 @@ persist.oppo.mm.    u:object_r:exported_system_prop:s0
 sys.oppo.mm.        u:object_r:exported_system_prop:s0
 
 # Camera
-oppo.camera.                u:object_r:oppo_camera_prop:s0
-sys.oppo.camera.            u:object_r:oppo_camera_prop:s0
-persist.camera.             u:object_r:oppo_camera_prop:s0
-persist.oppo.camera.        u:object_r:oppo_camera_prop:s0
-persist.sys.assert.panic    u:object_r:exported_system_prop:s0
+cameradaemon.SaveMemAtBoot         u:object_r:exported_system_prop:s0
+oppo.camera.                       u:object_r:oppo_camera_prop:s0
+sys.oppo.camera.                   u:object_r:oppo_camera_prop:s0
+persist.camera.                    u:object_r:oppo_camera_prop:s0
+persist.cam.pp.feat.mask           u:object_r:exported_system_prop:s0
+persist.capture.burst.exposures    u:object_r:exported_system_prop:s0
+persist.debug.set.fixedfps         u:object_r:exported_system_prop:s0
+persist.denoise.process.plates     u:object_r:exported_system_prop:s0
+persist.dualcam.lpm.enable         u:object_r:exported_system_prop:s0
+persist.enable.max.pending.buf     u:object_r:exported_system_prop:s0
+persist.oppo.camera.               u:object_r:oppo_camera_prop:s0
+persist.partial.skip               u:object_r:exported_system_prop:s0
+persist.sys.assert.panic           u:object_r:exported_system_prop:s0
+ro.camera.dualcam.type             u:object_r:exported_system_prop:s0
+ro.camera.sensor.aux2m             u:object_r:exported_system_prop:s0
+st.stereo.dump                     u:object_r:exported_system_prop:s0
 
 # Fingerprint
 gf.debug.                u:object_r:oppo_fingerprint_prop:s0
